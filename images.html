@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>image</title>
+    <style>
+        body{
+            background-color: #414141;
+        }
+    </style>
+</head>
+<body>
+    <img src="https://images.pexels.com/photos/18004078/pexels-photo-18004078/free-photo-of-ship-sailing-against-london-bridge.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" width="400px" height="100px" alt="no image">
+
+    <img src="./picture.png" width="400px" height="100px" alt="no image">
+
+    <picture>
+        <source media="(min-width: 650px)" srcset="./picture.png" />
+        <source media="(min-width: 460px)" srcset="./picture1.png" />
+        <img src="./picture.png" alt="">
+    </picture>
+
+    <!-- an image map generator -->
+    <img src="rajupic.jpg" usemap="#image-map">
+
+    <map name="image-map">
+        <area onclick="One()" target="" alt="" title="" href="" coords="582,201,781,436" shape="rect">
+        <area onclick="Two()" target="" alt="" title="" href="" coords="677,624,805,689" shape="rect">
+    </map>
+    <script>
+        function One(){
+            alert("You clicked on One")
+        }
+        function Two(){
+            alert("You clicked on Two")
+        }
+    </script>
+</body>
+</html>
