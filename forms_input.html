@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms One</title>
+    <style>
+        body {
+            background-color: #41414141;
+            color: #fff;
+            }
+    </style>
+</head>
+<body>
+    <h1>Forms in HTML</h1>
+    <form action="" method="GET" accept-charset="UTF-8" autocomplete="off" enctype="" >
+        <label for="fname">First Name</label><br/>
+        <input type="text" placeholder="first name" name="" value="raju" id="fname">
+
+        <input type="reset" value="reset">
+        <input type="password" name="" id="">
+        <input type="week" name="" id="">
+
+        <select name="editors" id="" multiple>
+            <option value="vscode">VSCode</option>
+            <option value="sublime">Sublime</option>
+        </select>
+
+        <input list="editors" name="editors">
+        <datalist id="editors">
+            <option value="vscode">vscode</option>
+            <option value="sublime">sublime</option>
+
+        </datalist>
+        <input type="hidden" name="">
+        <div>
+            <input type="radio" id="huey" name="drone" value="huey" checked />
+            <label for="huey">Huey</label>
+        </div>
+        
+          <div>
+            <input type="radio" id="dewey" name="drone" value="dewey" />
+            <label for="dewey">Dewey</label>
+          </div>
+          <div>
+            <input type="range" id="volume" name="volume" min="0" max="11" />
+            <label for="volume">Volume</label>
+          </div>
+          <div>
+            <input type="checkbox" id="coding" name="interest" value="coding" />
+            <label for="coding">Coding</label>
+          </div>          
+        <button type="submit">submit</button>
+    </form>
+</body>
+</html>
